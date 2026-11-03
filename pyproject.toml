@@ -1,0 +1,10 @@
+[project]
+name = "telepilot"
+version = "0.6.0"
+description = "Gestion locale de canaux et partenariats Telegram"
+requires-python = ">=3.13,<3.15"
+dependencies = ["Telethon==1.42.0"]
+
+[project.scripts]
+telepilot = "telepilot.__main__:main"
+

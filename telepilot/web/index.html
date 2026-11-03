@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TelePilot — Telegram Studio</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/polish.css">
+  <link rel="stylesheet" href="assets/studio.css">
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <div id="app" class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#2AABEE"/><path fill="#fff" d="M36.5 13.3 30.3 36c-.47 1.6-1.75 2-3.2 1.23l-8.25-6.1-4.06 3.9c-.45.45-.83.83-1.7.83l.6-8.48L29.2 17.4c.67-.59-.14-.92-1.04-.32l-19.2 12.1-8.3-2.59c-1.8-.57-1.83-1.8.38-2.67L33.4 11.45c1.5-.56 2.82.36 2.33 1.85Z" transform="translate(4 0) scale(.9)"/></svg></div><div><div class="brand-name">TelePilot</div><div class="brand-sub">STUDIO</div></div></div>
+      <div class="sidebar-divider"></div>
+      <div class="side-section">NAVIGATION</div>
+      <nav id="primary-nav" aria-label="Navigation principale"></nav>
+      <div class="side-section side-section-secondary">COMPTE</div>
+      <nav id="secondary-nav"></nav>
+      <div class="sidebar-fill"></div>
+      <div class="side-bottom-card" id="sidebar-help"><div class="bottom-card-dot"></div><div><strong>Serveur local</strong><small>127.0.0.1 · Session privée</small></div></div>
+      <div class="sidebar-account"><div class="account-avatar">T</div><div class="account-text"><strong id="account-label">Compte Telegram</strong><span id="account-subtitle">Connexion en attente</span></div><span class="account-chevron">›</span></div>
+    </aside>
+    <main class="workspace">
+      <header class="topbar"><div class="breadcrumbs" id="breadcrumbs"></div><div class="topbar-right"><div class="status-pill" id="connection-pill"><span class="status-dot"></span><span>Hors ligne</span></div><button class="icon-button" id="help-button" title="Aide pour cette page" aria-label="Aide">?</button><button class="account-button" id="settings-button" aria-label="Paramètres"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .32 1.77l.06.06-2.96 2.96-.06-.06A1.6 1.6 0 0 0 15 19.4a1.6 1.6 0 0 0-1 .6V21h-4v-1a1.6 1.6 0 0 0-1-.6 1.6 1.6 0 0 0-1.77.32l-.06.06-2.96-2.96.06-.06A1.6 1.6 0 0 0 4.6 15a1.6 1.6 0 0 0-.6-1H3v-4h1a1.6 1.6 0 0 0 .6-1 1.6 1.6 0 0 0-.32-1.77l-.06-.06 2.96-2.96.06.06A1.6 1.6 0 0 0 9 4.6a1.6 1.6 0 0 0 1-.6V3h4v1a1.6 1.6 0 0 0 1 .6 1.6 1.6 0 0 0 1.77-.32l.06-.06 2.96 2.96-.06.06A1.6 1.6 0 0 0 19.4 9a1.6 1.6 0 0 0 .6 1h1v4h-1a1.6 1.6 0 0 0-.6 1Z"/></svg></button></div></header>
+      <section class="main-scroll" id="main-scroll"><div class="page" id="page"></div></section>
+      <div id="import-banner" class="import-banner hidden"></div>
+    </main>
+  </div>
+  <div id="modal-backdrop" class="modal-backdrop hidden" role="presentation"><div id="modal" class="modal" role="dialog" aria-modal="true"></div></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+</body>
+</html>
